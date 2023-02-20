@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <a href="./index.html"><h1>JET GALACTIC</h1></a>
+        </div>
+        
+        <div id="right-nav">
+            <a href="./mission.html"><h4>OUR MISSION</h4></a>
+            <a href="./destinations.html"><h4>DESTINATIONS</h4></a>
+            <a href="./checkIn.html"><h4>CHECK IN</h4></a>
+            <a href="./reserve.html"><button id="reserve">RESERVE NOW</button></a>
+        </div>
+    </nav>
+    <div id="splash">
+        <h1>YOUR ADVENTURE</h1>
+        <h1>STARTS HERE</h1>
+    </div>
+    <form>
+        <div class="name-div">
+            <label for="First name">First name</label>
+            <input type="text" name="First name" id="first-name" placeholder="First Name">
+        </div>
+        <div class="name-div">
+            <label for="Last name">Last name</label>
+            <input type="text" name="Last name" id="last-name" placeholder="Last Name">
+        </div>
+        <div id="passanger-div">
+        <label for="passangers">Passangers</label>
+            <select id="passangers" name="passangers">
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+            </select>
+        </div>
+        <div id="departing-div">
+        <label for="departing-from">Departing from</label>
+            <select id="departing-from" name="departing-from">
+                <option value="venus">Venus</option>
+                <option value="earth">Earth</option>
+                <option value="mars">Mars</option>
+            </select>
+        </div>
+        <div id="arriving-div">
+        <label for="arriving-on">Arriving On</label>
+            <select id="arriving-on" name="arriving-on">
+                <option value="venus">Venus</option>
+                <option value="earth">Earth</option>
+                <option value="mars">Mars</option>
+            </select>
+        </div>
+        <div id="date-div">
+        <label for="date">Date</label>
+            <input type="date" id="date" name="date">
+        </div>
+        <div id="search-btn-div">
+            <button id="search-btn">Search</button>
+        </div>
+    </form>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
