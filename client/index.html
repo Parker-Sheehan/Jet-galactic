@@ -24,48 +24,47 @@
         <h1>YOUR ADVENTURE</h1>
         <h1>STARTS HERE</h1>
     </div>
+
     <form>
-        <div class="name-div">
-            <label for="First name">First name</label>
-            <input type="text" name="First name" id="first-name" placeholder="First Name">
+        <div class="input-box">
+            <div class="selector-div">
+            <label for="passangers">Passangers</label>
+                <select class="selectors" id="passangers" name="passangers">
+                    <option value="0">00</option>
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+
+                </select>
+            </div>
+            <div class="selector-div">
+            <label for="departing-from">Departing from</label>
+                <select class="selectors" id="departing-from" name="departing-from">
+                    <option value="venus">Venus</option>
+                    <option value="earth">Earth</option>
+                    <option value="mars">Mars</option>
+                </select>
+            </div>
+            <div class="selector-div">
+            <label for="arriving-on">Arriving On</label>
+                <select class="selectors" id="arriving-on" name="arriving-on">
+                    <option value="venus">Venus</option>
+                    <option value="earth">Earth</option>
+                    <option value="mars">Mars</option>
+                </select>
+            </div>
+            <div class="selector-div">
+            <label for="date">Date</label>
+                <input class="selectors" type="date" id="date" name="date">
+            </div>
+            <div class="selector-div">
+                <button id="search-btn">Search</button>
+            </div>
         </div>
-        <div class="name-div">
-            <label for="Last name">Last name</label>
-            <input type="text" name="Last name" id="last-name" placeholder="Last Name">
-        </div>
-        <div id="passanger-div">
-        <label for="passangers">Passangers</label>
-            <select id="passangers" name="passangers">
-                <option value="1">01</option>
-                <option value="2">02</option>
-                <option value="3">03</option>
-                <option value="4">04</option>
-                <option value="5">05</option>
-                <option value="6">06</option>
-            </select>
-        </div>
-        <div id="departing-div">
-        <label for="departing-from">Departing from</label>
-            <select id="departing-from" name="departing-from">
-                <option value="venus">Venus</option>
-                <option value="earth">Earth</option>
-                <option value="mars">Mars</option>
-            </select>
-        </div>
-        <div id="arriving-div">
-        <label for="arriving-on">Arriving On</label>
-            <select id="arriving-on" name="arriving-on">
-                <option value="venus">Venus</option>
-                <option value="earth">Earth</option>
-                <option value="mars">Mars</option>
-            </select>
-        </div>
-        <div id="date-div">
-        <label for="date">Date</label>
-            <input type="date" id="date" name="date">
-        </div>
-        <div id="search-btn-div">
-            <button id="search-btn">Search</button>
+        <div id="names-div-div">
         </div>
     </form>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
