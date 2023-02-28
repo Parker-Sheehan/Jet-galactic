@@ -21,7 +21,32 @@
         </div>
     </nav>
     <div id="log-in-page-div">
-        <form class='log-in-page-form' id="log-in">
+        <form class='log-in-page-form' id="sign-up">
+            <div class="log-in-page-h1">
+                <h1>Create New Account</h1>
+            </div>
+            <div class="input-div">
+                <div>
+                    <label for="email">Email:</label>
+                    <input class="selectors" type="text" name="email" id="" placeholder="Email">
+                </div>
+                <div>
+                    <label for="new-username">Username:</label>
+                    <input class="selectors" type="text" name="new-username" id="new-username" placeholder="Username">
+                </div>
+                <div>
+                    <label for="new-password">Password:</label>
+                    <input class="selectors" type="text" name="new-password" id="new-password" placeholder="Password">
+                </div>
+                <div>
+                    <label for="confirm-password">Confirm Password: </label>
+                    <input class="selectors" type="text" name="confirm-password" id="confirm-password" placeholder="Confirm Password">
+                </div>
+            </div>
+            <button class="button-box" id="sign-up-btn">SIGN UP</button>
+            
+        </form>
+        <!-- <form class='log-in-page-form' id="log-in">
             <div class="log-in-page-h1">
                 <h1>Already A Memeber</h1>
             </div>
@@ -36,9 +61,10 @@
                 </div>
             </div>
         <button class="button-box"id="sign-up-btn">LOG IN</button>
-    </div>
 
-    </form>
+        </form> -->
+    </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

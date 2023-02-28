@@ -17,6 +17,13 @@ module.exports = {
     seed : (req,res) => {
         sequelize.query(`
         DROP TABLE IF EXISTS tickets;
+        DROP TABLE IF EXISTS accounts;
+
+        CREATE TABLE accounts (
+            user_id SERIAL PRIMARY KEY,
+            user_name VARCHAR(50),
+            password VARCHAR(50)
+        );
 
         CREATE TABLE tickets (
             ticket_id SERIAL PRIMARY KEY,
